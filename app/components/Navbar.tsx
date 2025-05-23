@@ -19,7 +19,7 @@ export default function Navbar() {
   return (
     <nav className="bg-blue-600 text-white shadow">
       <div className="container mx-auto px-4 py-4 flex items-center justify-between">
-        <Link href="/" className="text-xl font-bold">NadlanUS</Link>
+        <Link href="/" className="text-xl font-bold">NadlanUS</Link> <p>גרסת בדיקה בלבד</p>
         <button
           onClick={() => setOpen(!open)}
           className="sm:hidden text-2xl focus:outline-none"
