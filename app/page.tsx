@@ -1,4 +1,4 @@
-import AboutPage from '../app/about/page'
+import AboutPage from './about/page'
 
 export default function HomePage() {
   return (
@@ -25,6 +25,18 @@ export default function HomePage() {
             </a>
           </div>
         </div>
+        {/* Google Analytics  */}
+        <script async src="https://www.googletagmanager.com/gtag/js?id=G-FD2F93246J"></script>
+        <script
+            dangerouslySetInnerHTML={{
+              __html: `
+                window.dataLayer = window.dataLayer || [];
+                function gtag(){dataLayer.push(arguments);}
+                gtag('js', new Date());
+                gtag('config', 'G-FD2F93246J');
+              `,
+            }}>
+        </script>
       </header>
 
       {/* למה לבחור בנו */}
